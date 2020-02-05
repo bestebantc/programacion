@@ -1,0 +1,15 @@
+package sumagrande;
+
+public class Sumagrande {
+
+    public static void main(String[] args) {
+       int resultado=0;
+       for (int contador=1; contador<1000;contador++){
+           if (contador %2 !=0){
+               resultado=resultado+contador;
+           }
+       }
+       System.out.println(resultado);
+    }
+    
+}
