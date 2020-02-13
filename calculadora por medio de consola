@@ -1,0 +1,86 @@
+package calculadora;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author usuario
+ */
+public class Calculadora {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        boolean ban;
+int op;
+float x,y,z;
+String aux;
+do
+{
+ban=false;
+do
+{
+op=Integer.parseInt(JOptionPane.showInputDialog(null,"Menu\n1.-Suma\n2.-Resta\n3.-Multiplicacion\n4.-Division\n5.--Fin\nDame una Opcion"));
+if((op>=1)&&(op<=5))
+ban=true;
+else
+System.out.println("Error");
+}
+while(ban==false);
+switch(op)
+{
+case 1:
+{
+System.out.println("Suma dos Numeros");
+aux=JOptionPane.showInputDialog("Dame el primer numero");
+x=Float.parseFloat(aux);
+aux=JOptionPane.showInputDialog("Dame el segundo numero");
+y=Float.parseFloat(aux);
+z=x+y;
+System.out.println("Resultado "+z);
+break;
+}
+case 2:
+{
+System.out.println("Resta dos Numeros");
+aux=JOptionPane.showInputDialog("Dame el primer numero");
+x=Float.parseFloat(aux);
+aux=JOptionPane.showInputDialog("Dame el segundo numero");
+y=Float.parseFloat(aux);
+z=x-y; System.out.println("Resultado "+z);
+
+break;
+}
+case 3:
+{
+System.out.println("Multiplica dos Numeros");
+aux=JOptionPane.showInputDialog("Dame el primer numero");
+x=Float.parseFloat(aux);
+aux=JOptionPane.showInputDialog("Dame el segundo numero");
+y=Float.parseFloat(aux);
+z=x*y;
+System.out.println("Resultado "+z);
+break;
+
+
+}
+case 4:
+{
+System.out.println("Divide dos Numeros");
+aux=JOptionPane.showInputDialog("Dame el primer numero");
+x=Float.parseFloat(aux);
+
+aux=JOptionPane.showInputDialog("Dame el segundo numero");
+y=Float.parseFloat(aux);
+
+z=x/y;
+System.out.println("Resultado "+z);
+
+break;
+}
+}
+}while(op!=5);
+
+
+}
