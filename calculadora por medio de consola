@@ -79,6 +79,36 @@ System.out.println("Resultado "+z);
 
 break;
 }
+case 5:
+{
+System.out.println("Seno de un numero");
+aux=JOptionPane.showInputDialog("Dame el numero");
+x=Float.parseFloat(aux);
+
+z=Math.sin(x);
+System.out.println("Resultado "+z);
+break;
+}
+case 6:
+{
+System.out.println("coseno de un numero");
+aux=JOptionPane.showInputDialog("Dame el numero");
+x=Float.parseFloat(aux);
+
+z=Math.cos(x);
+System.out.println("Resultado "+z);
+break;
+}
+case 7:
+{
+System.out.println("tangente de un numero");
+aux=JOptionPane.showInputDialog("Dame el numero");
+x=Float.parseFloat(aux);
+
+z=Math.tan(x);
+System.out.println("Resultado "+z);
+break;
+}
 }
 }while(op!=5);
 
